@@ -23,7 +23,10 @@ const args = await parseCLIArgs(
 			"special-value": function(value) {
 				return `something-${value}`
 			}
-		}
+		},
+
+		// multi options means option can be specified more than one time
+		multi_options: ["file"]
 	}
 )
 

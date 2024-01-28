@@ -22,17 +22,27 @@ async function handleOption({name, value}, config, ctx) {
 
 	if (!(name in valid_options)) {
 		throw new Error(`--${name}: no such option.`)
-	}
-	else if (name in ctx.options) {
-		throw new Error(`--${name}: already specified.`)
-	}
-	else if (value === null) {
+	} else if (value === null) {
 		throw new Error(`--${name}: value required.`)
 	}
 
-	ctx.options[name] = await validateAndTransformOptionValue(
-		value, valid_options[name]
-	)
+	const is_multi_option = "multi_options" in config && config.multi_options.includes(name)
+
+	if (!is_multi_option && name in ctx.options) {
+		throw new Error(`--${name}: already specified.`)
+	}
+
+	const transformed_value = await validateAndTransformOptionValue(value, valid_options[name])
+
+	if (is_multi_option && !(name in ctx.options)) {
+		ctx.options[name] = []
+	}
+
+	if (is_multi_option) {
+		ctx.options[name].push(transformed_value)
+	} else {
+		ctx.options[name] = transformed_value
+	}
 }
 
 export default async function(argv, config = null) {
