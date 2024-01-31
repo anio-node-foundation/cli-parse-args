@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import parseCLIArgs from "./index.mjs"
+import parseCLIArgs from "./src/index.mjs"
 
 const args = await parseCLIArgs(
 	process.argv.slice(2), {
