@@ -10,7 +10,7 @@
     "url": "git+https://github.com/anio-js-foundation/node-parse-cli-args.git"
   },
   "devDependencies": {
-    "@anio-js-foundation/bundle-package": "^2.0.0"
+    "@anio-js-foundation/bundle-package": "^2.0.1"
   },
   "scripts": {
     "prepare": "./node_modules/.bin/bundle-package ."
