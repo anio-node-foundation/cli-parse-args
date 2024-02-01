@@ -1,21 +1,12 @@
 {
-  "name": "@anio-js-foundation/node-parse-cli-args",
+  "name": "@anio-js-core-foundation/node-parse-cli-args",
   "version": "0.7.1",
   "description": "A pretty simple CLI args parser for node.",
-  "main": "./dist/package.mjs",
+  "main": "./src/index.mjs",
   "author": "Anio Software <info@anio-software.de>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anio-js-foundation/node-parse-cli-args.git"
-  },
-  "devDependencies": {
-    "@anio-js-foundation/bundle-package": "^2.0.1"
-  },
-  "scripts": {
-    "prepare": "./node_modules/.bin/bundle-package ."
-  },
-  "files": [
-    "./dist/package.mjs"
-  ]
+    "url": "git+https://github.com/anio-js-core-foundation/node-parse-cli-args.git"
+  }
 }
