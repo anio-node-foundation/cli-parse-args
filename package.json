@@ -1,5 +1,5 @@
 {
-  "name": "@anio-node-foundation/parse-cli-args",
+  "name": "@anio-node-foundation/cli-parse-args",
   "version": "1.0.0",
   "description": "A pretty simple CLI args parser.",
   "main": "./dist/package.mjs",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anio-node-foundation/parse-cli-args.git"
+    "url": "git+https://github.com/anio-node-foundation/cli-parse-args.git"
   },
   "devDependencies": {
     "@anio-software/npm-package-bundler": "^1.0.0"

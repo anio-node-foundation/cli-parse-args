@@ -1,9 +1,9 @@
-# @anio-node-foundation/parse-cli-args
+# @anio-node-foundation/cli-parse-args
 
 Parses command line arguments.
 
 ```js
-import parseCLIArgs from "@anio-node-foundation/parse-cli-args"
+import parseCLIArgs from "@anio-node-foundation/cli-parse-args"
 
 const args = await parseCLIArgs(
 	process.argv.slice(2), {
