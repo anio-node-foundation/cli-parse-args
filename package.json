@@ -1,6 +1,6 @@
 {
   "name": "@anio-node-foundation/cli-parse-args",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A pretty simple CLI args parser.",
   "main": "./build/package.mjs",
   "author": "Anio Software <info@anio.software>",
