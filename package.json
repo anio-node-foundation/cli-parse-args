@@ -2,7 +2,7 @@
   "name": "@anio-node-foundation/cli-parse-args",
   "version": "2.0.0",
   "description": "A pretty simple CLI args parser.",
-  "main": "./dist/package.mjs",
+  "main": "./build/package.mjs",
   "author": "Anio Software <info@anio.software>",
   "license": "MIT",
   "repository": {
@@ -10,12 +10,13 @@
     "url": "git+https://github.com/anio-node-foundation/cli-parse-args.git"
   },
   "devDependencies": {
-    "@anio-software/npm-package-bundler": "^1.0.0"
+    "@vipen/target-js": "^0.7.0",
+    "vipen": "^0.1.0"
   },
   "scripts": {
-    "prepare": "./node_modules/.bin/npm-package-bundler ."
+    "prepare": "./node_modules/.bin/vipen ."
   },
   "files": [
-    "./dist/package.mjs"
+    "./build/package.mjs"
   ]
 }
